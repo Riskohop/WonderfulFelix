@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+.author {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: #cccccc;
+    z-index: 9999;
+    font-family: monospace;
+}
+.author a {
+    color: #cccccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.author a:hover {
+    color: #949494;
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.preloader img {
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    max-width: 50px;
+    animation: loaderRotate 2s linear infinite;
+}
+
+@keyframes loaderRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
