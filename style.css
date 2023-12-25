@@ -31,9 +31,10 @@ body {
 .preloader img {
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
-    max-width: 50px;
+    max-width: 180px;
     animation: loaderRotate 2s linear infinite;
 }
+
 
 @keyframes loaderRotate {
     100% {
